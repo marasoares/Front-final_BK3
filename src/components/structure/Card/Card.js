@@ -7,9 +7,9 @@ const Card = (props) => {
     <Link to={`/view/${vaga._id}`} className="col">
       <div className="card">
         <div className="card-body">
-          <h5 className="card-title">{ vaga.titulo }</h5>
-          <span className="badge bg-primary">{ vaga.senioridade }</span>
-          <span className="badge bg-light text-dark">R$ { vaga.salario }</span>
+          <h5 className="card-title">{ vaga.nome }</h5>
+          <span className="badge bg-primary">{ vaga.autor }</span>
+          <span className="badge bg-light text-dark">R$ { vaga.imagemUrl }</span>
         </div>
       </div>
     </Link>

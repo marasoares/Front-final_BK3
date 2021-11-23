@@ -1,7 +1,7 @@
 const Api = {
-  apiUrl: 'http://localhost:3001/vagas',
-  fetchGetAll: () => fetch(Api.apiUrl),
-  fetchGetById: id => fetch(`${Api.apiUrl}/${id}`),
+  apiUrl: 'https://backend-api-restful.herokuapp.com/infantis',
+  fetchGetAll: () => fetch(`${Api.apiUrl}/listAll`),
+  fetchGetById: id => fetch(`${Api.apiUrl}/listId/${id}`),
   fetchPost: (vaga) => {
     return fetch(`${Api.apiUrl}/add`, {
       method: 'POST',

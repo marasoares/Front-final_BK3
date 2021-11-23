@@ -52,7 +52,7 @@ const Edicao = (props) => {
         <div className="card-title">
           <div className="row">
             <div className="col">
-              <h3>Edicao da Vagaa</h3>
+              <h3>Edição de Livro</h3>
             </div>
           </div>
         </div>
@@ -63,28 +63,28 @@ const Edicao = (props) => {
                 <div className="form-floating mb-3">
                   <input
                     type="text"
-                    value={vaga.titulo}
+                    value={vaga.nome}
                     className="form-control"
-                    name="titulo"
+                    name="nome"
                     id="floatingInput"
-                    placeholder="Digite o Titulo"
+                    placeholder="Digite o Nome"
                     onChange={handleFieldsChange}
                   />
-                  <label htmlFor="floatingInput">Titulo</label>
+                  <label htmlFor="floatingInput">Nome</label>
                 </div>
               </div>
               <div className="col">
                 <div className="form-floating">
                   <input
                     type="text"
-                    value={vaga.salario}
+                    value={vaga.autor}
                     className="form-control"
-                    name="salario"
+                    name="autor"
                     id="floatingsalario"
-                    placeholder="Digite o Salario"
+                    placeholder="Digite o Autor"
                     onChange={handleFieldsChange}
                   />
-                  <label htmlFor="floatingsalario">Salario</label>
+                  <label htmlFor="floatingsalario">Autor</label>
                 </div>
               </div>
             </div>
@@ -93,33 +93,53 @@ const Edicao = (props) => {
                 <div className="form-floating mb-3">
                   <input
                     type="text"
-                    value={vaga.descricao}
+                    value={vaga.editora}
                     className="form-control"
-                    name="descricao"
+                    name="editora"
                     id="floatingInput"
-                    placeholder="Digite a Descricao"
+                    placeholder="Digite a Editora"
                     onChange={handleFieldsChange}
                   />
-                  <label htmlFor="floatingInput">Descricao</label>
+                  <label htmlFor="floatingInput">Editora</label>
                 </div>
               </div>
               <div className="col">
                 <div className="form-floating">
-                  <select value={vaga.senioridade}
+                  <input value={vaga.paginas}
                     className="form-control"
-                    name="senioridade"
+                    name="paginas"
                     id="floatingsenioridade"
-                    value={vaga.senioridade}
+                    value={vaga.paginas}
                     onChange={handleFieldsChange}
-                    >
-                    <option value="junior">Junior</option>
-                    <option value="pleno">pleno</option>
-                    <option value="senior">senior</option>
-                  </select>
-                  <label htmlFor="floatingsenioridade">Senioridade</label>
+                    />
+                    <label htmlFor="floatingsenioridade">Páginas</label>
                 </div>
               </div>
-            </div>
+              <div className="col">
+                <div className="form-floating">
+                  <input value={vaga.ano}
+                    className="form-control"
+                    name="ano"
+                    id="floatingsenioridade"
+                    value={vaga.ano}
+                    onChange={handleFieldsChange}
+                    />
+                    <label htmlFor="floatingsenioridade">Ano de Lançamento</label>
+                </div>
+              </div>
+              <div className="col">
+                <div className="form-floating">
+                  <input value={vaga.imagemUrl}
+                    className="form-control"
+                    name="imagemUrl"
+                    id="floatingsenioridade"
+                    value={vaga.imagemUrl}
+                    onChange={handleFieldsChange}
+                    />
+                    <label htmlFor="floatingsenioridade">URL</label>
+                </div>
+              </div>
+             </div>
             <div className="row">
               <div className="col">
                 <button className="btn btn-success" type="submit">
