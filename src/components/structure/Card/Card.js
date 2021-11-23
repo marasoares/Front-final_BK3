@@ -9,8 +9,7 @@ const Card = (props) => {
         <div className="card-body">
           <h5 className="card-title">{ vaga.nome }</h5>
           <span className="badge bg-primary">{ vaga.autor }</span>
-          <span className="badge bg-light text-dark"> { vaga.imagemUrl }</span>
-          <img src="vaga.imagemURL"/>
+          <img src={vaga.imagemUrl} alt="" width="50%"/>
         </div>
       </div>
     </Link>

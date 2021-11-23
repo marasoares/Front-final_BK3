@@ -39,10 +39,10 @@ const VagaView = (props) => {
           <h1 className="text-center mt-4">{vaga.nome}</h1>
           <h2 className="text-center">{vaga.autor}</h2>
           <h4 className="text-center">{vaga.editora}</h4>
-          <h5 className="text-center">{vaga.imagemUrl}</h5>
+          <img src={vaga.imagemUrl} alt="" width="25%"/>
           <div className="btn-group mt-3 w-100 d-flex align-items-center justify-content-center">
             <Link to={`/edit/${vaga._id}`}  className="btn btn-outline-info">Editar</Link>
-            <button className="btn btn-outline-danger" onClick={onOpenModal}>Excluir</button>
+            <a className="btn btn-outline-danger" onClick={onOpenModal}>Excluir</a>
           </div>
         </div>
       </div>

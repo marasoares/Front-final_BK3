@@ -135,6 +135,7 @@ const Edicao = (props) => {
                     onChange={handleFieldsChange}
                     />
                     <label htmlFor="floatingsenioridade">URL</label>
+                    <img src={vaga.imagemUrl} alt="" width="50%"/>
                 </div>
               </div>
              </div>
