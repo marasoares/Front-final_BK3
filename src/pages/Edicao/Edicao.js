@@ -34,8 +34,6 @@ const Edicao = (props) => {
     evento.preventDefault();
     // faco uma copia do estado com obj atualizado.
     const vagaObj = { ...vaga };
-    // transforma o salario em inteiro.
-    vagaObj.salario = parseInt(vagaObj.salario);
     try {
       const response = await Api.fetchPut(vagaObj, _id);
       const result = await response.json();
@@ -117,11 +115,11 @@ const Edicao = (props) => {
               </div>
               <div className="col">
                 <div className="form-floating">
-                  <input value={vaga.ano}
+                  <input value={vaga.anoLancamento}
                     className="form-control"
                     name="ano"
                     id="floatingsenioridade"
-                    value={vaga.ano}
+                    value={vaga.anoLancamento}
                     onChange={handleFieldsChange}
                     />
                     <label htmlFor="floatingsenioridade">Ano de Lançamento</label>
